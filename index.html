@@ -3,15 +3,543 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Corporate Yes</title>
+<title>The Executive Yes | Stop Pitching To People Who Can't Say Yes</title>
+<meta name="description" content="Get direct access to CEOs and CFOs who can actually say yes in 30 days or less. The E.X.E.C. Method by Lisa T. Miller.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
 <style>
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;background:#f7f7f5;color:#1f3864}
-main{text-align:center;padding:2rem}
-h1{font-size:2.5rem;margin:0 0 .5rem}
-p{font-size:1.1rem;color:#444;margin:0}
+:root{--navy:#06456b;--orange:#f59222;--ink:#262626;--red:#b84444;--light:#f5f5f5;--sky:#f8fcff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Montserrat,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+h1,h2,h3{margin:0 0 20px;line-height:1.15;font-weight:700}
+h1{font-size:46px;color:var(--navy)}
+h2{font-size:46px;color:var(--ink)}
+h3{font-size:35px}
+.copy p{margin:0 0 14px;font-size:18px}
+.copy p.big{font-size:22px;font-weight:600}
+.copy p.lead{font-size:20px;font-weight:500}
+.copy strong{font-weight:700}
+.grid{display:grid;gap:56px;align-items:center}
+.g2{grid-template-columns:1.1fr 1fr}
+.g2r{grid-template-columns:1fr 1.1fr}
+.grad{background:linear-gradient(160deg,#fff 52%,var(--orange) 100%)}
+.grad-hero{background:linear-gradient(135deg,#fff 52%,var(--orange) 100%)}
+.grad-deep{background:linear-gradient(160deg,#fff 23%,var(--orange) 100%)}
+.navy{background:var(--navy);color:#fff}
+.navy h1,.navy h2,.navy h3{color:#fff}
+.orange{background:var(--orange)}
+.light{background:var(--light)}
+.btn{display:inline-block;background:var(--orange);color:#fff;font-weight:600;font-size:16px;text-decoration:none;padding:16px 34px;border-radius:10px;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;box-shadow:0 6px 18px rgba(245,146,34,.35)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(245,146,34,.45)}
+.btn.navy-btn{background:var(--navy);box-shadow:0 6px 18px rgba(6,69,107,.3)}
+.cta{margin-top:26px}
+.price{margin:14px 0 4px;font-size:22px;color:var(--navy);font-weight:600}
+.price s{color:#8a8a8a;font-weight:400;margin-right:8px}
+.price .eb{font-size:13px;letter-spacing:.14em;font-weight:700;color:var(--orange);margin-left:6px}
+.avail{font-size:11px;letter-spacing:.2em;font-weight:500;color:#1c4057;text-transform:uppercase;margin:0}
+.center{text-align:center}
+.center .avail{margin:0 auto}
+/* top bar */
+.topbar{background:var(--navy);color:#fff;text-align:center;font-size:15px;padding:12px 16px;font-weight:500}
+/* header */
+header{background:transparent;position:relative;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.nav img{width:150px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:28px}
+.nav a{text-decoration:none;color:var(--navy);font-size:15px;font-weight:500}
+.nav a:hover{color:var(--orange)}
+.burger{display:none;background:none;border:0;font-size:30px;color:var(--navy);cursor:pointer}
+/* hero */
+.hero{padding:30px 0 80px}
+.hero .quote{font-style:italic;font-weight:300;font-size:16px;margin:0 0 22px;color:var(--ink)}
+.hero .quote img{width:100px;margin-bottom:6px}
+.hero h1{font-size:50px}
+.hero .sub{font-size:20px;font-weight:500;margin:0 0 6px}
+.hero .sub2{font-size:18px;font-weight:400;margin:0}
+.hero .art{position:relative}
+/* short-line sales copy */
+.lines p{margin:0 0 10px;font-size:19px}
+.lines p.hl{font-weight:700;color:var(--navy);font-size:24px}
+/* cards inside navy */
+.card{background:#fff;color:var(--ink);border-radius:16px;padding:44px 48px;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+/* testimonials slider */
+.slider{position:relative;max-width:900px;margin:0 auto;overflow:hidden}
+.track{display:flex;transition:transform .8s ease}
+.slide{min-width:100%;padding:10px 40px 30px;text-align:center}
+.slide img{width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 14px;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.slide .stars{color:var(--orange);font-size:22px;letter-spacing:4px;margin-bottom:12px}
+.slide blockquote{margin:0 0 18px;font-size:24px;font-weight:600;line-height:1.4;color:var(--ink)}
+.slide .who{font-weight:700;color:var(--navy)}
+.slide .role{font-size:14px;color:#666}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:8px}
+.dots button{width:12px;height:12px;border-radius:50%;border:0;background:#cfd8df;cursor:pointer;padding:0}
+.dots button.on{background:var(--orange)}
+.arrow{position:absolute;top:45%;transform:translateY(-50%);background:#fff;border:0;width:44px;height:44px;border-radius:50%;box-shadow:0 4px 14px rgba(0,0,0,.15);cursor:pointer;font-size:20px;color:var(--navy)}
+.arrow.prev{left:0}.arrow.next{right:0}
+/* method */
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:40px}
+.pillar{background:rgba(255,255,255,.92);border-radius:16px;padding:36px 36px 30px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.pillar .letter{font-size:100px;font-weight:800;line-height:.9;color:var(--orange);margin:0 0 6px;-webkit-text-stroke:2px var(--navy);color:var(--orange)}
+.pillar h3{font-size:28px;color:var(--navy);margin-bottom:14px}
+.pillar p{margin:0 0 10px;font-size:17px}
+.pillar p.kick{font-weight:600;color:var(--navy);margin-top:14px}
+.info{margin:50px auto 0;max-width:900px;text-align:center}
+.info .ph{border:2px dashed rgba(6,69,107,.4);border-radius:16px;padding:60px 20px;color:var(--navy);font-weight:600;background:rgba(255,255,255,.6)}
+/* inside list */
+.items{list-style:none;padding:0;margin:20px 0 0}
+.items li{margin:0 0 22px;padding-left:34px;position:relative;font-size:18px}
+.items li:before{content:"";position:absolute;left:0;top:7px;width:18px;height:18px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(245,146,34,.25)}
+.items li b{display:block;font-size:21px;color:var(--navy);margin-bottom:4px}
+.items li i{display:block;font-style:normal;color:#555;font-size:16px}
+/* FAQ */
+.faq{max-width:900px;margin:0 auto}
+.faq details{border-bottom:1px solid rgba(255,255,255,.2);padding:6px 0}
+.faq summary{cursor:pointer;list-style:none;font-size:20px;font-weight:600;padding:18px 44px 18px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:4px;top:14px;font-size:30px;font-weight:300;color:var(--orange);transition:transform .2s}
+.faq details[open] summary:after{transform:rotate(45deg)}
+.faq .a p{margin:0 0 8px;font-size:17px;font-weight:400;color:#e9f1f7}
+.faq .a{padding:0 0 18px}
+/* single testimonial */
+.solo{max-width:860px;margin:0 auto;text-align:center}
+.solo .stars{color:var(--orange);font-size:28px;letter-spacing:6px;margin-bottom:16px}
+.solo blockquote{margin:0 0 22px;font-size:24px;font-weight:500;line-height:1.5;font-style:italic}
+.solo img{width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 auto 10px}
+/* author */
+.author .kicker{display:inline-block;background:var(--navy);color:#fff;padding:6px 16px;border-radius:30px;font-size:15px;margin-bottom:18px}
+.author .photo{border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.2)}
+.badges{width:300px;margin-top:20px}
+/* footer */
+footer{background:var(--navy);color:#fff;padding:60px 0 30px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+footer h4{margin:0 0 14px;font-size:18px;font-weight:600}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:10px}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{color:var(--orange)}
+footer .logo{width:110px;background:#fff;padding:8px;border-radius:8px;margin-bottom:18px}
+.disc{font-size:13px;font-weight:300;color:#cfdbe5;margin:40px 0 20px;line-height:1.6}
+.fbottom{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.15);padding-top:22px}
+.fbottom .badgerow{display:flex;gap:20px;align-items:center}
+.fbottom .badgerow img{height:40px;width:auto}
+/* sticky CTA on mobile */
+@media(max-width:900px){
+ .g2,.g2r{grid-template-columns:1fr}
+ .g2r .art{order:-1}
+ h1,h2,.hero h1{font-size:34px}
+ h3{font-size:26px}
+ .pillars{grid-template-columns:1fr}
+ .fgrid{grid-template-columns:1fr}
+ .nav ul{display:none;position:absolute;right:24px;top:90px;background:#fff;flex-direction:column;gap:0;box-shadow:0 10px 30px rgba(0,0,0,.15);border-radius:12px;padding:10px 0;min-width:220px;z-index:20}
+ .nav ul.open{display:flex}
+ .nav ul li a{display:block;padding:12px 22px}
+ .burger{display:block}
+ section{padding:60px 0}
+ .card{padding:30px 24px}
+ .slide{padding:10px 10px 30px}
+ .slide blockquote{font-size:19px}
+ .arrow{display:none}
+}
 </style>
 </head>
 <body>
-<main><h1>Corporate Yes</h1><p>Coming soon.</p></main>
+
+<div class="topbar">🎧 Free Audiobook With All Paperback Orders</div>
+
+<div class="grad-hero">
+<header>
+  <div class="wrap nav">
+    <a href="#top"><img src="img/logo.png" alt="The Executive Yes"></a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu">
+      <li><a href="#inside">The Book</a></li>
+      <li><a href="#method">Inside The System</a></li>
+      <li><a href="#author">About The Author</a></li>
+      <li><a href="https://portal.executiveyes.com/">Reader Login</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap grid g2">
+    <div class="copy">
+      <p class="quote"><img src="img/stars.png" alt="5 stars">"I had given up on the corporate market but Lisa showed me the way" - Chetan Walia, CEO</p>
+      <h1>Stop Pitching To People Who Can’t Say Yes</h1>
+      <p class="sub">Get direct access to CEOs and CFOs who can actually say YES in 30 days or less...</p>
+      <p class="sub2">Even if gatekeepers have been blocking you for years.</p>
+      <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
+      <p class="price"><s>$67</s> $21 <span class="eb">EARLY BIRD</span></p>
+      <p class="avail">Available in Book, eBook &amp; Audio</p>
+    </div>
+    <div class="art"><img src="img/book-mockup.webp" alt="The Executive Yes book, ebook and audiobook" width="633"></div>
+  </div>
+</section>
+</div>
+
+<section class="light">
+  <div class="wrap lines" style="max-width:820px">
+    <p class="hl">You're better than the deals you're currently closing.</p>
+    <p class="hl">Way better.</p>
+    <p>Your solution works.</p>
+    <p>Your results speak for themselves.</p>
+    <p>But while you're "building consensus" with middle managers who forward your emails to someone else...</p>
+    <p>Your competition is closing seven-figure deals directly with the CEO.</p>
+    <p><strong>The problem isn't your pitch.</strong></p>
+    <p><strong>It's who you're pitching to.</strong></p>
+    <p>Because the people you CAN reach... can't say yes.</p>
+    <p>And the people who CAN say yes... you can't reach.</p>
+    <p class="hl">Until now.</p>
+    <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
+    <p class="price"><s>$67</s> $21 <span class="eb">EARLY BIRD</span></p>
+    <p class="avail">Available in Book, eBook &amp; Audio</p>
+  </div>
+</section>
+
+<section class="grad">
+  <div class="wrap grid g2">
+    <div class="copy lines">
+      <h1>Here's the moment I realized we were doing this all wrong…</h1>
+      <p>Our 30-person consulting firm had just wrapped a project for a Georgia health system.</p>
+      <p>We delivered $11.5 million in cost savings.</p>
+      <p>Measurable. Documented. Undeniable.</p>
+      <p>We outperformed every big-name firm that had cycled through their doors.</p>
+      <p>And then….</p>
+      <p>At one of the largest annual healthcare conferences…</p>
+      <p>The CEO stood up in front of his peers and said:</p>
+      <p class="hl">"Lisa's company is the best kept secret out there."</p>
+      <p>Some people may have taken that as a compliment.</p>
+      <p>But me? I was frustrated!</p>
+      <p>Because "best kept secret" meant ONE thing:</p>
+      <p class="hl">We were invisible.</p>
+    </div>
+    <div class="art"><img src="img/story.webp" alt="Lisa T. Miller holding The Executive Yes" width="500" style="margin:0 auto;border-radius:16px"></div>
+  </div>
+</section>
+
+<section class="navy">
+  <div class="wrap">
+    <h2 style="max-width:900px">Our Results Were Phenomenal….</h2>
+    <div class="card lines" style="max-width:900px">
+      <p>Our boutique firm was competing against McKinsey and other multinational consulting giants.</p>
+      <p>And we delivered measurable impact in 30 days while those other firms would still be "gathering data".</p>
+      <p><strong>But the other CEOs and CFOs who needed us too?</strong></p>
+      <p>They had no idea we existed.</p>
+      <p>We'd land a client through a referral...</p>
+      <p>Deliver transformational results...</p>
+      <p>Wow the board...</p>
+      <p>Then start from ZERO again.</p>
+      <p>We were always grinding for the next deal.</p>
+      <p class="hl">We weren't failing at delivery.</p>
+      <p class="hl">We were failing at visibility.</p>
+      <p>So I decided we would never be the "best kept secret" again.</p>
+      <p>I committed to getting our message in front of executives...</p>
+      <p>In a way they couldn't ignore.</p>
+      <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="grad-deep">
+  <div class="wrap grid g2r">
+    <div class="art"><img src="img/method.webp" alt="Lisa presenting to an executive team" width="531" style="margin:0 auto;border-radius:16px"></div>
+    <div class="copy lines">
+      <h1>So I Reverse-Engineered The Entire Game</h1>
+      <p>I figured out how to get our message in front of executives in a way they couldn't ignore.</p>
+      <p>Not by being louder.</p>
+      <p>Not by spending more on ads or hiring a PR firm.</p>
+      <p><strong>But by talking about their problems better than they could.</strong></p>
+      <p>See, executives already know their department costs are rising.</p>
+      <p>That's on the P&amp;L.</p>
+      <p>But I could walk into their office and give them the 10 hidden reasons WHY...</p>
+      <p>With insights they'd never considered.</p>
+      <p>I created what I call "Commercial Insights"...</p>
+      <p>Delivered thought leadership at their conferences...</p>
+      <p>And developed curated content that landed directly on executive desks.</p>
+      <p>No gatekeepers.</p>
+      <p>No "I'll pass this along to my team."</p>
+      <p>Just direct access to the people who write checks.</p>
+      <p class="hl">That became the E.X.E.C. Method™.</p>
+      <p>The exact system that's generated over $200 million in sales...</p>
+      <p>And helped hundreds of sales professionals go from being stuck in 9-month cycles...</p>
+      <p>To closing deals in 60 days with actual decision-makers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sky" style="background:var(--sky)" id="results">
+  <div class="wrap center">
+    <h2>Proven System.<br>Real Results.</h2>
+    <div class="slider" id="slider">
+      <button class="arrow prev" aria-label="Previous">‹</button>
+      <div class="track" id="track">
+        <div class="slide">
+          <img src="img/chetan.webp" alt="Chetan Walia">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Lisa helped me get access to 100K plus deals. I had given up on the corporate market but Lisa showed me the way, made it super easy, and effective. It worked within 90 days."</blockquote>
+          <div class="who">Chetan Walia</div><div class="role">CEO, Knowledge</div>
+        </div>
+        <div class="slide">
+          <img src="img/jacqueline.webp" alt="Jacqueline Oberst">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Lisa helped me shift from selling to small clients to successfully accessing enterprise accounts. Her strategy and hands on implementation support made the process clear, practical, and highly effective, with results achieved within 90 days."</blockquote>
+          <div class="who">Jacqueline Oberst</div>
+        </div>
+        <div class="slide">
+          <img src="img/brian.webp" alt="Brian Newton">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Lisa helped me navigate complex enterprise healthcare engagements by positioning financial and operational value in a way that resonated with C-suite decision makers. She operates as a true executive-level advisor."</blockquote>
+          <div class="who">Brian Newton</div>
+        </div>
+        <div class="slide">
+          <img src="img/miles.jpg" alt="Miles Veth">
+          <div class="stars">★★★★★</div>
+          <blockquote>"If you are a young business owner (like me) looking for a seasoned mentor to really dive deep with you, I'd recommend Lisa without hesitation!"</blockquote>
+          <div class="who">Miles Veth</div><div class="role">CEO</div>
+        </div>
+      </div>
+      <button class="arrow next" aria-label="Next">›</button>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="orange" id="method">
+  <div class="wrap">
+    <h2 style="color:#fff">Introducing The E.X.E.C. Method™</h2>
+    <div class="copy" style="max-width:820px;color:#fff">
+      <p>The same system that's generated over $200 million in sales...</p>
+      <p>And helped hundreds of professionals transform their approach to executive selling.</p>
+      <p><strong>Here's how it works:</strong></p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="letter">E</div>
+        <h3>Establish Executive Context</h3>
+        <p>Learn to speak the language of outcomes instead of features.</p>
+        <p>Understand the invisible pressures driving every decision.</p>
+        <p>And demonstrate you've done your homework at a level that separates you from the 95% of salespeople who show up unprepared.</p>
+        <p class="kick">This is where you stop being “just another vendor”... and start being someone worth listening to.</p>
+      </div>
+      <div class="pillar">
+        <div class="letter">X</div>
+        <h3>eXpose the Real Problem</h3>
+        <p>Stop pitching solutions to surface-level requests.</p>
+        <p>Discover how to identify the true problem hiding beneath what executives THINK they need.</p>
+        <p>Then articulate ROI so clearly the decision becomes obvious.</p>
+        <p>When you connect your solution to the exact metrics THEY'RE measured on... with conservative numbers they can defend to their board...</p>
+        <p class="kick">You transform from "nice to have" to "we need this NOW."</p>
+      </div>
+      <div class="pillar">
+        <div class="letter">E</div>
+        <h3>Earn Trust and Win the Business</h3>
+        <p>Trust at the C-suite level isn't built through relationship tactics.</p>
+        <p>It's earned through competence, transparency, and making their job easier.</p>
+        <p>Learn the executive meeting framework that positions you as the lowest-risk path forward...</p>
+        <p>How to handle the dreaded "I'll think about it" moment...</p>
+        <p>And the art of managing consensus without losing executive sponsorship.</p>
+        <p class="kick">This is where credibility in the room determines whether you advance... or get sent back down.</p>
+      </div>
+      <div class="pillar">
+        <div class="letter">C</div>
+        <h3>COMMIT to Outcomes</h3>
+        <p>The sale is just the beginning.</p>
+        <p>Master the after-the-sale discipline that turns one-time transactions into long-term strategic partnerships.</p>
+        <p>Deliver visible, measurable results in the first 30-60 days... that validate their decision... build executive loyalty... and create natural expansion opportunities.</p>
+        <p class="kick">This is where whale clients are born. And where your reputation becomes your most powerful sales tool.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grad" id="inside">
+  <div class="wrap grid g2">
+    <div class="copy">
+      <h1>What You Get Inside The Executive Yes</h1>
+      <p>If you've ever thought...</p>
+      <p><em>"I'm great at what I do... but why am I stuck talking to middle managers while my competitors somehow access the top?"</em></p>
+      <p><strong>This book is your answer.</strong></p>
+      <p>Inside you’ll find:</p>
+      <ul class="items">
+        <li><b>The E.X.E.C. Method™</b>The proven 4-pillar system to secure C-suite meetings within 30 days... position yourself as a strategic advisor (not just another vendor)... and accelerate your sales cycle by 50% or more.</li>
+        <li><b>The 30-Minute Executive Brief Framework</b>The exact research checklist that lets you walk into ANY room... and talk about their business better than their own consultants. <i>This is what gets you credibility BEFORE you ever ask for the meeting.</i></li>
+        <li><b>The 3-Number Story Formula</b>How to express ROI so clearly the decision becomes automatic. No fluff. No jargon. Just the 3 numbers that matter to THEM. <i>(And how to connect your solution to the exact metrics they're measured on.)</i></li>
+        <li><b>The Executive Meeting Blueprint</b>How to structure every C-suite conversation... so you build trust through competence... handle the dreaded "I'll think about it" moment... and manage multi-stakeholder consensus without losing executive sponsorship.</li>
+        <li><b>The 30-Day Value Validation System</b>Turn one-time transactions into long-term strategic partnerships... by delivering visible, measurable results that validate their decision... and create natural expansion opportunities. <i>(This is how you stop having to hustle for EVERY deal.)</i></li>
+        <li><b>Real-World Case Studies</b>See exactly how these frameworks generated over $200 million in sales... won deals against billion-dollar competitors... and helped sales professionals go from being ignored by gatekeepers... to becoming trusted advisors in executive suites.</li>
+      </ul>
+      <div class="cta"><a class="btn navy-btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
+    </div>
+    <div class="art"><img src="img/book-mockup.webp" alt="The Executive Yes" width="560" style="margin:0 auto"></div>
+  </div>
+</section>
+
+<section class="sky" style="background:var(--sky)">
+  <div class="wrap grid g2r">
+    <div class="art"><img src="img/knock.webp" alt="Elevator button lit to go up" width="330" style="margin:0 auto;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.18)"></div>
+    <div class="copy lines">
+      <h1 style="color:var(--red)">You Know You’re Leaving Serious Money On The Table</h1>
+      <p>The kind of transformational deals that would change your career.</p>
+      <p>Maybe your life.</p>
+      <p>You're probably fed up with endless sales cycles that go nowhere.</p>
+      <p>Exhausted from perfecting presentations for decision-makers who never actually decide.</p>
+      <p>Frustrated watching less qualified competitors close deals with the very executives you can't even get meetings with.</p>
+      <p>Meanwhile...</p>
+      <p>You're stuck justifying your price to people three levels removed from budget authority.</p>
+      <p>Watching procurement squeeze every dollar out of the deals you finally DO close.</p>
+      <p><strong>And here's the worst part:</strong></p>
+      <p>You suspect the real decision was made BEFORE you even got involved.</p>
+      <p>You're just there to validate a choice someone else influenced months ago.</p>
+      <p>Going through the motions of their "evaluation process"...</p>
+      <p>Knowing you never really had a shot.</p>
+      <p>You know you could deliver exponential value...</p>
+      <p>If you could just get in front of the right person.</p>
+      <p>But those moments feel like accidents.</p>
+      <p>Not a repeatable system.</p>
+      <p><strong>Look.</strong></p>
+      <p>It's not gonna change on its own.</p>
+      <p>Not without a fundamental shift in how you approach executive access.</p>
+      <p class="hl">This book gives you that shift.</p>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap center lines" style="max-width:820px">
+    <h2>The 100-Day "I'm Not Stuck Anymore" Guarantee</h2>
+    <p>Use the E.X.E.C. Method for 100 days.</p>
+    <p>If you're STILL stuck in 6-12 month sales cycles...</p>
+    <p>Still pitching to mid-level managers who can't say yes...</p>
+    <p>Still invisible to the executives who control real budgets...</p>
+    <p class="hl">I'll give you your money back.</p>
+    <p>No questions asked.</p>
+    <p>All I ask is that you show me you actually USED the system.</p>
+    <p><strong>Fair?</strong></p>
+    <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
+  </div>
+</section>
+
+<section class="grad">
+  <div class="wrap solo">
+    <div class="stars">★★★★★</div>
+    <blockquote>In 40 years when I am looking back on my career, I have no doubt Lisa Miller's impact on me will be something that I still think about often. If you are a young business owner (like me) looking for a seasoned mentor to really dive deep with you, I'd recommend Lisa without hesitation!</blockquote>
+    <img src="img/miles.jpg" alt="Miles Veth">
+    <div class="who" style="font-weight:700;color:var(--navy)">Miles Veth</div>
+    <div class="role" style="font-size:14px;color:#666">CEO</div>
+  </div>
+</section>
+
+<section class="navy" id="faq">
+  <div class="wrap">
+    <h2 class="center" style="font-size:44px">You May Be Asking This Right Now….</h2>
+    <div class="faq">
+      <details>
+        <summary>I've never sold to C-suite executives before. Can this really work for me?</summary>
+        <div class="a"><p>Absolutely.</p><p>The E.X.E.C. Method is designed for sales professionals at ANY level. Not just people with existing executive relationships.</p><p>In fact, many of our most successful implementations come from people who were previously stuck selling to middle management.</p><p>The system gives you the exact research, preparation, and conversation strategies that executives respond to.</p><p>Your ability to solve problems matters most. This shows you how to communicate that effectively.</p></div>
+      </details>
+      <details>
+        <summary>I've tried reaching out to executives before but get blocked by gatekeepers. How is this different?</summary>
+        <div class="a"><p>94% of salespeople never get past the gatekeeper. So you're not alone.</p><p>But here's the thing... Traditional outreach is DESIGNED to fail. Because you're approaching executives like everyone else does.</p><p>The E.X.E.C. Method uses a research-driven approach that positions you as a peer-level advisor. Not another vendor trying to book a demo.</p><p>You'll learn the exact language patterns and positioning that open doors instead of triggering automatic rejection.</p><p>Plus... the executive brief process gives you credibility BEFORE you ever ask for the meeting. Which changes everything.</p></div>
+      </details>
+      <details>
+        <summary>My sales process is already complex with multiple stakeholders. Will this make things more complicated?</summary>
+        <div class="a"><p>Nope. The E.X.E.C. Method was BUILT for complex B2B sales environments. Not simple transactional stuff.</p><p>We show you how to navigate 5-7 stakeholders successfully... manage consensus without losing momentum... and maintain executive sponsorship even when you're dealing with their teams.</p><p>If you can manage your current pipeline... you can implement this system.</p></div>
+      </details>
+      <details>
+        <summary>How long before I see results?</summary>
+        <div class="a"><p>Most people secure their first C-suite meeting within 30 days. First deals typically close 60-90 days after that.</p><p>Obviously... your specific timeline depends on your sales cycle, industry, and existing pipeline.</p><p>But unlike most sales training that requires MONTHS of practice before seeing results... the E.X.E.C. Method can start opening executive doors immediately. Because you're using proven frameworks. Not winging it.</p></div>
+      </details>
+      <details>
+        <summary>I've been told I need a huge network or warm introductions to access executives. Is that true?</summary>
+        <div class="a"><p>Nope. That is one of the biggest myths in B2B sales.</p><p>And honestly? It's the excuse people use when they don't know HOW to get executive access on their own.</p><p>The E.X.E.C. Method is specifically designed to work WITHOUT requiring existing executive relationships... or expensive referral networks.</p><p>You earn access based on demonstrated business acumen and relevant insights. Many of our most successful case studies started with ZERO C-suite connections. They just followed the system.</p></div>
+      </details>
+      <details>
+        <summary>Will this work for my specific industry or type of sale?</summary>
+        <div class="a"><p>If you sell complex solutions where the buying decision involves strategic considerations and multiple stakeholders... this system will work for you.</p><p>The E.X.E.C. Method has been successfully implemented across dozens of industries. Technology. Professional services. Manufacturing. Financial services. Healthcare. From $50K deals to multi-million dollar transformations.</p><p>The book includes examples from multiple industries... so you can see exactly how the frameworks apply to YOUR context.</p></div>
+      </details>
+      <details>
+        <summary>Is this just about getting meetings, or does it actually help close deals?</summary>
+        <div class="a"><p>It's about the WHOLE process. Getting the meeting is just step one.</p><p>The E.X.E.C. Method covers everything from securing that first conversation... to structuring executive meetings that build trust... to demonstrating ROI in THEIR language... to managing consensus across stakeholders... to creating long-term strategic partnerships.</p><p>This isn't about meeting volume. It's about closing LARGER deals FASTER... with decision-makers who have real authority.</p></div>
+      </details>
+      <details>
+        <summary>Can I contact someone if I have questions about my order?</summary>
+        <div class="a"><p>Yep. Email us at <a href="mailto:info@lisatmiller.com" style="color:#fff;text-decoration:underline">info@lisatmiller.com</a></p><p>We'll get back to you within 24 business hours. Usually faster.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="grad author" id="author">
+  <div class="wrap grid g2r">
+    <div class="art"><img class="photo" src="img/lisa.webp" alt="Lisa T. Miller" width="450" style="margin:0 auto"></div>
+    <div class="copy lines">
+      <span class="kicker">About the author</span>
+      <h1>Hi, I’m Lisa</h1>
+      <p>For more than 30 years, I've helped businesses, founders, and enterprise leaders win complex deals, navigate high-stakes decisions, and redesign the way they create value.</p>
+      <p>I've sold to and advised CEOs, CFOs, COOs, supply chain executives, department leaders, board committees, and cross-functional evaluation groups.</p>
+      <p>I learned how enterprise decisions really get made.</p>
+      <p>Why deals stall.</p>
+      <p>Where internal friction lives.</p>
+      <p>And what unlocks sponsorship at the highest levels.</p>
+      <p class="hl">Now I'm sharing everything.</p>
+      <img class="badges" src="img/author-badge.webp" alt="Selling Power Leading Sales Consultants 2025 and Million Dollar Consulting Hall of Fame">
+      <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
+      <p class="price"><s>$67</s> $21 <span class="eb">EARLY BIRD</span></p>
+      <p class="avail">Available in Book, eBook &amp; Audio</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img class="logo" src="img/ltm-logo.png" alt="Lisa T. Miller">
+        <p style="margin:0;max-width:420px">For more than 30 years, Lisa has helped businesses, founders, and enterprise leaders win complex deals, navigate high-stakes decisions, and redesign the way they create value.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#inside">The Book</a></li>
+          <li><a href="#method">Inside The System</a></li>
+          <li><a href="#author">About The Author</a></li>
+          <li><a href="https://portal.executiveyes.com/">Reader Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="mailto:info@lisatmiller.com">info@lisatmiller.com</a></li>
+          <li><a href="https://www.lisatmiller.com/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="https://www.lisatmiller.com/terms-of-use/">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disc">The testimonials and sales figures presented here are exceptional results of our existing clients and are not indicative of typical experiences. Lisa T. Miller LLC provides no guarantees of financial outcomes; your results may vary significantly. Your earnings depend on various personal factors and there is an inherent risk of loss of capital. Past performance is not a predictor of future results. We are not liable for your financial decisions or actions, and our products or services should be used with due diligence and understanding of your individual circumstances. By using our services, you acknowledge and agree to the potential for varying financial outcomes and assume responsibility for all associated risks.</p>
+    <div class="fbottom">
+      <div>© 2026. Lisa T. Miller. All Rights Reserved.</div>
+      <div class="badgerow"><img src="img/footer-badge1.webp" alt=""><img src="img/footer-badge2.webp" alt=""></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var track=document.getElementById('track'),slides=track.children,n=slides.length,i=0,dots=document.getElementById('dots'),timer;
+  for(var k=0;k<n;k++){var b=document.createElement('button');b.setAttribute('aria-label','Slide '+(k+1));b.onclick=(function(k){return function(){go(k);restart();}})(k);dots.appendChild(b);}
+  function go(k){i=(k+n)%n;track.style.transform='translateX(-'+(i*100)+'%)';for(var j=0;j<n;j++)dots.children[j].classList.toggle('on',j===i);}
+  function restart(){clearInterval(timer);timer=setInterval(function(){go(i+1)},9000);}
+  document.querySelector('.arrow.prev').onclick=function(){go(i-1);restart();};
+  document.querySelector('.arrow.next').onclick=function(){go(i+1);restart();};
+  go(0);restart();
+  document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open')})});
+})();
+</script>
 </body>
 </html>
