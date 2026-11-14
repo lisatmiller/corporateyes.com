@@ -81,6 +81,9 @@ header{background:transparent;position:relative;z-index:5}
 .hero .sub{font-size:20px;font-weight:500;margin:0 0 6px}
 .hero .sub2{font-size:18px;font-weight:400;margin:0}
 .hero .art{position:relative}
+.hero .buyrow{display:flex;align-items:center;gap:30px;margin-top:8px}
+.hero .buyrow .cta{margin-top:0}
+.hero .sp-badge{width:118px;height:auto;flex:none;filter:drop-shadow(0 6px 12px rgba(0,0,0,.16))}
 /* short-line sales copy */
 .lines p{margin:0 0 10px;font-size:19px}
 .lines p.hl{font-weight:700;color:var(--navy);font-size:24px}
@@ -133,6 +136,9 @@ header{background:transparent;position:relative;z-index:5}
 .author .kicker{display:inline-block;background:var(--navy);color:#fff;padding:6px 16px;border-radius:30px;font-size:15px;margin-bottom:18px}
 .author .photo{border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.2)}
 .badges{width:300px;margin-top:20px}
+.badgewrap{display:flex;align-items:center;gap:30px;margin:26px 0 6px}
+.badgewrap img{height:104px;width:auto}
+.badgewrap img.pair{height:128px;margin-left:-14px;mix-blend-mode:multiply}
 /* footer */
 footer{background:var(--navy);color:#fff;padding:60px 0 30px;font-size:15px}
 .fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
@@ -148,6 +154,11 @@ footer .logo{width:110px;background:#fff;padding:8px;border-radius:8px;margin-bo
 .fbottom .badgerow img{height:40px;width:auto}
 /* sticky CTA on mobile */
 @media(max-width:900px){
+ .hero .buyrow{gap:18px}
+ .hero .sp-badge{width:96px}
+ .badgewrap{gap:16px}
+ .badgewrap img{height:84px}
+ .badgewrap img.pair{height:104px;margin-left:-10px}
  .g2,.g2r{grid-template-columns:1fr}
  .g2r .art{order:-1}
  h1,h2,.hero h1{font-size:34px}
@@ -191,8 +202,13 @@ footer .logo{width:110px;background:#fff;padding:8px;border-radius:8px;margin-bo
       <h1>Stop Pitching To People Who Can’t Say Yes</h1>
       <p class="sub">Get direct access to CEOs and CFOs who can actually say YES in 30 days or less...</p>
       <p class="sub2">Even if gatekeepers have been blocking you for years.</p>
-      <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
-      <p class="price"><s>$67</s> $21 <span class="eb">EARLY BIRD</span></p>
+      <div class="buyrow">
+        <div>
+          <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
+          <p class="price"><s>$67</s> $21 <span class="eb">EARLY BIRD</span></p>
+        </div>
+        <img class="sp-badge" src="img/sp-recommended-2026.svg" alt="Selling Power 2026 Highly Recommended Book" width="118" height="118">
+      </div>
       <p class="avail">Available in Book, eBook &amp; Audio</p>
     </div>
     <div class="art"><img src="img/book-mockup.webp" alt="The Executive Yes book, ebook and audiobook" width="633"></div>
@@ -505,7 +521,7 @@ footer .logo{width:110px;background:#fff;padding:8px;border-radius:8px;margin-bo
       <p>Where internal friction lives.</p>
       <p>And what unlocks sponsorship at the highest levels.</p>
       <p class="hl">Now I'm sharing everything.</p>
-      <img class="badges" src="img/author-badge.webp" alt="Selling Power Leading Sales Consultants 2025 and Million Dollar Consulting Hall of Fame">
+      <div class="badgewrap"><img src="img/sp-recommended-2026.svg" alt="Selling Power 2026 Highly Recommended Book"><img class="pair" src="img/author-badge.webp" alt="Selling Power Leading Sales Consultants 2025 and Million Dollar Consulting Hall of Fame"></div>
       <div class="cta"><a class="btn" href="https://executiveyes.com/order-book">Get Your Copy Now</a></div>
       <p class="price"><s>$67</s> $21 <span class="eb">EARLY BIRD</span></p>
       <p class="avail">Available in Book, eBook &amp; Audio</p>
